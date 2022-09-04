@@ -4,10 +4,7 @@ pipeline {
     stage('Source') {
       steps {
         sh 'git clone https://github.com/digitalvarys/jenkins-tutorials.git'
-        sh 'mkdir /opt/gradle'
-        sh 'curl -L https://services.gradle.org/distributions/gradle-6.5-bin.zip --output gradle.zip'
-        sh 'mkdir /opt/gradle/'
-        sh 'unzip -d /opt/gradle/ gradle.zip'
+        
         echo ' success .....'
       }
     }
