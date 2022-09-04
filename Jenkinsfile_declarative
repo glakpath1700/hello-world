@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Source') {
       steps {
-        sh 'git clone https://github.com/digitalvarys/jenkins-tutorials.git'
+        echo 'git clone https://github.com/digitalvarys/jenkins-tutorials.git'
         
         echo ' success .....'
       }
